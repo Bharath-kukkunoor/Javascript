@@ -31,7 +31,36 @@ const myFunction= function(){
     console.log("hello");
 }
 
-console.log(typeof myFunction);
+// console.log(typeof myFunction);
 
 
 //reference document https://tc39.es/ecma262/#sec-typeof-operator
+
+
+
+//***********************************Memory allocation************************************************
+
+// Stack (Primitive)=> we get a copy of it, Heap (Non-Permitive)=> we get a reference of it
+
+let myname="Bharath"
+
+let othername=myname
+
+othername="Bharath K V";
+
+// console.log(myname);
+// console.log(othername);
+
+
+let userOne={
+    email:"user1@gmail.com",
+    upi:"user1@ybl"
+}
+
+let userTwo= userOne
+userTwo.email= "user2@gmail.com"
+console.log(userOne.email);
+console.log(userTwo.email);
+
+
+
